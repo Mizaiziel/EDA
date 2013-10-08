@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "vector.h"
+
+int main(int argc, char** argv) 
+{
+	int numVectores;
+	int x = 0;
+	//vect v;	
+	char mystring[100];
+	int data;
+
+    	FILE *file; 			
+    	file = fopen("entrada.txt","r");	//abrimos fichero
+    
+    	fscanf(file, "%d\n", &numVectores);
+ 	//printf("%d\n", numVectores);
+
+	while(x<numVectores)
+    	{	
+		printf("%d %d\n", numVectores);
+		if(fgets(mystring, 100, file) != NULL)
+		{
+			sscanf(mystring,"%d",&data);
+			printf("%d\n", data);
+ 	   	}
+		x++;
+	}
+
+	fclose(file); 				
+    
+    	return (EXIT_SUCCESS);
+}
