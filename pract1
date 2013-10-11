@@ -2,8 +2,30 @@
 #include <stdlib.h>
 #include "vector.h"
 
+
+/* Isra: probando funciones*/
+vector* create_vector(int n, float* data)
+{
+		
+
+
+
+}
+
+
+/* Main */
 int main(int argc, char** argv) 
 {
+
+	//////////////////////////////////////////
+	//	/* Estructura de vector */	//
+	//	typedef struct 			//
+	//	{				//
+	//		float* data;		//
+	//		int size;		//
+	//	} vector;			//
+	//////////////////////////////////////////
+
 	int numVectores;
 	int x = 0;
 	//vect v;	
